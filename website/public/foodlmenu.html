@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body class="text-gray-800 relative">
+        
+        <header class="text-gray-600 body-font ">
+            <div class="container flex flex-nowrap flex-row jus md:flex-row  w-full p-4 justify-between">
+
+                <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-0" href="index.html">
+                    
+                    <span class="ml-3 text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500  ">Food Menu for Ninjas</span>
+                </a>
+
+
+                <div class="">
+                    <button
+                        class=" justify-around inline-flex items-center bg-white text-blue-500 font-medium border-blue-800 border-2 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 "
+                        id="split">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                         viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> </svg>-->
+                        <img alt="profil" class="animate-bounce duration-300 w-12 h-12 text-white p-2 mr-1 rounded-xs" src="img/icon/food-delivery.png"
+                          class="mx-auto object-cover h-10 w-10" />
+                    
+                        <p class="mr-2 text-lg font-semibold"> <span id="foodbacketamount"> </span> Food List </p>
+
+                    </button>
+
+                </div>
+
+
+            </div>
+        </header>
+        <!--left panel-->
+        
+        <div class="grid grid-cols-11 ">
+
+            <div id="fooditem" class=" col-span-11 px-4 py-4 bg-gray-100 ">
+                <div class="  flex justify-around  ">
+
+                    <!-- md:mr-auto bg-gray-500 md:ml-4 md:py-1 w-3/4 md:pl-4 -->
+                    <nav class="  md:border-gray-400 flex flex-nowrap justify-evenly text-base  bg-opacity-40 ">
+
+                        <button id="" class=" most group transition mr-4 text-gray-600 bg-white font-semibold cursor-pointer h-20 p-4 border-2 border-gray-400 focus:border-blue-400
+                          w-auto  rounded-lg focus:text-blue-500  flex flex-col justify-center">
+                          <img alt="profil" src="img/icon/hot.png"
+                          class="mx-auto object-cover h-10 w-10" />
+                          <p class="text-base font-semibold">Most Popular</p>
+                        
+                        </button>
+                        <button class="french group transition mr-4 text-gray-800 bg-white font-semibold cursor-pointer h-20 p-4 border-2 border-gray-400 focus:border-blue-400
+                        w-auto  rounded-lg focus:text-blue-500  flex flex-col justify-center">
+                        <img alt="profil" src="img/icon/finger-food.png"
+                          class="mx-auto object-cover h-10 w-10" />
+                          <p class="text-base font-semibold">French
+                            Food</p>
+                        </button>
+                        <button class="seafood group transition mr-4 text-gray-800 bg-white font-semibold cursor-pointer h-20 p-4 border-2 border-gray-400 focus:border-blue-400
+                        w-auto  rounded-lg focus:text-blue-500  flex flex-col justify-center"><img alt="profil" src="img/seafood/seafood0.jpg"
+                        class="mx-auto rounded-full object-cover h-10 w-10" />
+                        <p class="text-base font-semibold">Sea Food</p></button>
+                        <button class="italian group transition mr-4 text-gray-800 bg-white font-semibold cursor-pointer h-20 p-4 border-2 border-gray-400 focus:border-blue-400
+                        w-auto  rounded-lg focus:text-blue-500  flex flex-col justify-center"><img alt="profil" src="img/icon/salad.png"
+                        class="mx-auto object-cover h-10 w-10" />
+                        <p class="text-base font-semibold">Italian Food</p></button>
+                        
+                    </nav>
+                </div>
+                <div class="p-2">
+                    <h4 class="title  font-semibold text-2xl mb-1 mt-4  border-b-3 border-gray-200">Most Popular</h4>
+                    <section class="text-gray-600 w-full body-font   ">
+                        <div class="container mt-2 ">
+                            <div class="menu-backet flex flex-wrap justify-start">
+                                <!--ROW 1 of foodlist-->
+                                <!--Fooditem starts-->
+                                
+
+                                <!--END LISTS-->
+                            </div>
+                        </div>
+                    </section>
+                    <div class="mt-8 grid gap-x-4 gap-y-6 lg:grid-cols-4 sm:grid-cols-3 ">
+
+                        <!--END CARDS-->
+                    </div>
+                    <!-- <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+                    <div>
+                        cards go here
+                    </div>-->
+                    <div class="flex justify-center">
+                        <div
+                            class="border-solid md:border-2 text-red-400  py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50">
+                            Load more
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-span-3 hidden height-auto overflow-hidden max-h-full  relative" id="foodbacket">
+                <!-- <div class="w-full sticky h-20 border-b-2 border-red-500">
+                <p class=" text-3xl font-bold  p-8">Shop Food</p>
+              </div> -->
+                <div
+                    class="  container flex flex-col mx-auto w-full items-center justify-center bg-white   rounded-lg shadow">
+                    <div class="left-0 font-medium text-2xl bg-white text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 w-full h-16 text-center pt-4">Food
+                        List
+                    </div>
+
+                    <div id="backet" class="backet flex flex-col justify-evenly w-full">
+                        
+                    </div>
+
+                </div>
+                <div class="mt-4 w-2/3 flex flex-col align-center justify-center  right-auto mx-auto ">
+                    <button
+                        class=" justify-center  inline-flex items-center bg-blue-400 flex-col  font-medium text-white border-0 py-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base my-6 md:mt-0 "
+                        id="split">
+                        <a href="payment.html">Total money: <p class="total flex flex-col"> 0</p> 
+                        
+                        <p>Check Out</p>
+                    </a>
+                        
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="info-view hidden pt-10 w-full absolute top-0 h-full  bg-gray-600 bg-opacity-40 ">
+            <div class="sm:w-1/3 md:w-2/5 rounded-2xl m-auto bg-white">
+                <div class="h-12 flex flex-row justify-between align-middle headerview rounded-t-2xl bg-gray-200">
+                    <p class="text-lg p-3 font-bold ">Information</p>
+                    <button onclick="myFunction()"  class="hideview mr-4 mt-2 p-2 h-8 bg-yellow-50 font-bold">X</button>
+                </div>
+                <div class="w-full h-auto flex flex-col flex-nowrap justify-start p-4">
+    
+                    <div class="w-full h-auto flex flex-row flex-nowrap p-4 justify-start">
+                        <img alt="ecommerce" class=" w-20 h-20 mr-4 lg:h-auto object-cover object-center rounded"
+                            src="https://dummyimage.com/400x400">
+                       
+                        <div class="flex flex-col pt-3">
+                            <h2 class="text-sm title-font text-gray-500 tracking-widest">Category</h2>
+                            <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">Fresh Shrimp
+                            </h1>
+                            <div class=" w-1/2 h-10 p-0 border-0 inline-flex items-center justify-center left-0  ml-1">
+                                <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                                </svg>
+                                <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                                  </svg>
+                                  <svg fill="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                                  </svg>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-2 px-2">
+                        <a class="flex-grow text-indigo-800 border-b-2 font-semibold border-indigo-500 py-2 text-2xl px-1">Description</a>
+                        <p class="leading-relaxed mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric
+                            sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage
+                            brooklyn. .</p>
+                    </div>
+                    <div class="flex flex-col mb-2 px-2">
+                        <a class="flex-grow  font-semibold text-indigo-800 border-b-2 border-indigo-500 py-2 text-2xl px-1">Recipe</a>
+                        <div class="flex border-t border-gray-200 py-2">
+                            <span class=" font-semibold text-lg ">Protein</span>
+                            <span class="ml-auto text-gray-900 text-lg">100 pro</span>
+                        </div>
+                        <div class="flex border-t border-gray-200 py-2">
+                            <span class="text-gray-500 font-semibold text-lg">Additives:</span>
+                            <span class="ml-auto text-gray-900 text-lg">03</span>
+                        </div>
+                        <div class="flex border-t border-gray-200 py-2">
+                            <span class="text-gray-500 font-semibold text-lg">Material:</span>
+                            <span class="ml-auto text-gray-900 text-lg">Shrimp, Vegetables</span>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-firestore-compat.js"></script>
+        <script>document.write('<script type="module" src="foodlmenu.js?v=' + Date.now() + '"><\/script>');</script>
+        <script>
+            function myFunction(event) {document.getElementsByClassName("info-view")[0].classList.add("hidden")};
+        </script>
+        
+        <!-- <script src="main.js"></script> -->
+    
+
+    </body>
+
+</html>
